@@ -2,7 +2,9 @@ document.addEventListener("DOMContentLoaded", function() {
 	const contactForm = document.getElementById("contact-form");
 	contactForm.addEventListener("submit", e => {
 		e.preventDefault()
-		fetch("https://pranavpalle.netlify.app/.netlify/functions/contact", {body: new FormData(e.target), method: "POST"})
+		fetch("https://pranavpalle.netlify.app/.netlify/functions/contact", {body: JSON.stringify([...new FormData(e.target).values()]), method: "POST", headers: {
+			'Content-Type': 'application/json'
+		  }})
 	});
 
 	const carousel = document.querySelector(".carousel"); 
