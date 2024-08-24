@@ -3,6 +3,15 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRWB4BL7BM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SRWB4BL7BM');
+  </script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Pranav Palle - Personal Website Homepage</title>
@@ -28,6 +37,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <script src="/script.js" defer></script> 
 
   <!-- =======================================================
   * Template Name: MyResume
@@ -77,7 +87,7 @@
               
             </div>
             <br>
-            <a href="https://drive.google.com/file/d/19U5gOUj1hrFu4HbG8hqSj8k_Q5IlE5I4/view?usp=sharing" target="_blank" class="btn btn-outline-primary">Resume</a>
+            <a href="https://drive.google.com/file/d/1mqU5mlr580fzj7UYFx1aPtdFe5YHc85u/view?usp=sharing" target="_blank" class="btn btn-outline-primary">Resume</a>
 
           </div>
         </div>
@@ -177,7 +187,7 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">       
             <div class="service-item item-cyan position-relative">
               <div>
                 <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -389,6 +399,60 @@
 
     </section><!-- /Services Section -->
 
+    <!-- Issues: needs to overflow or loop around to front; center of screen  -->
+    <section id="carousel">
+      <div class="wrapper"> 
+        <i id="left" class="bi bi-chevron-left"></i> 
+        <ul class="carousel"> 
+            <li class="card"> 
+                <div class="img"><img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" 
+                                      alt="" draggable="false"> </div> 
+                <h2 style="color: green; font-weight:bold;"> 
+                      GeeksforGeeks 
+                  </h2> 
+                <span>Coding Platform</span> 
+            </li> 
+            <li class="card"> 
+                <div class="img"><img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" 
+                                      alt="" draggable="false"> </div> 
+                <h2 style="color: green; font-weight:bold;">GeeksforGeeks</h2> 
+                <span>Coding Platform</span> 
+            </li> 
+            <li class="card"> 
+                <div class="img"><img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" 
+                                      alt="" draggable="false"> </div> 
+                <h2 style="color: green; font-weight:bold;">GeeksforGeeks</h2> 
+                <span>Coding Platform</span> 
+            </li> 
+            <li class="card"> 
+                <div class="img"><img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" 
+                                      alt="" draggable="false"> </div> 
+                <h2 style="color: green; font-weight:bold;">GeeksforGeeks</h2> 
+                <span>Coding Platform</span> 
+            </li> 
+            <li class="card"> 
+                <div class="img"><img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" 
+                                      alt="" draggable="false"> </div> 
+                <h2 style="color: green; font-weight:bold;">GeeksforGeeks</h2> 
+                <span>Coding Platform</span> 
+            </li> 
+            <li class="card"> 
+                <div class="img"><img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" 
+                                      alt="" draggable="false"> </div> 
+                <h2 style="color: green; font-weight:bold;">GeeksforGeeks</h2> 
+                <span>Coding Platform</span> 
+            </li> 
+        </ul> 
+        <i id="right" class="bi bi-chevron-right"></i> 
+    </div> 
+    </section>
+
     <!-- Resume Section -->
     <section id="resume" class="resume section">
 
@@ -580,7 +644,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
-              <img src="assets/img/projects/perloan.png" class="object-fit-image" alt="PerLoan - Pranav Palle Hackathon Project">
+              <img src="assets/img/projects/perloan.png" style='border:1px solid #000000' class="object-fit-image" alt="PerLoan - Pranav Palle Hackathon Project">
               <br>
               <br>
               <a href="https://devpost.com/software/perloan" target="_blank" class="stretched-link">
@@ -591,15 +655,16 @@
               <p>PerLoan is a revolutionary peer-to-peer lending service which allows people to request loans from others at a lower interest rate than traditional banks and credit cards, decreasing the burden on them, while also providing lenders with a way to grow their savings.</p>
               <br>
               <div class="social-links d-flex justify-content-center">
-                <a href="https://github.com/lokashrinav/Loan" target="_blank"><i class="bi bi-github h3 left-spacing"></i></a>
-                <a href="https://devpost.com/software/perloan" target="_blank"><i class="bi bi-link-45deg h3"></i></a>
+                <button type="button" class="btn btn-outline-primary" formaction="https://github.com/lokashrinav/Loan" target="_blank"><i class="bi bi-github left-spacing"></i>GitHub</button>
+                <div class="left-spacing"></div>
+                <button type="button" class="btn btn-outline-primary" formaction="https://devpost.com/software/perloan" target="_blank"><i class="bi bi-link-45deg left-spacing"></i>Submission</button>
               </div>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
-              <img src="assets/img/projects/readanize.png" class="object-fit-image" alt="Readanize - Pranav Palle CS50X Final Project">
+              <img src="assets/img/projects/readanize.png" style='border:1px solid #000000' class="object-fit-image" alt="Readanize - Pranav Palle CS50X Final Project">
               <br>
               <br>
               <a href="" class="stretched-link">
@@ -608,7 +673,25 @@
               <p>Readanize is a website that logs books that users have read storing metrics about the books and information regard user metrics to display realtime alerts.</p>
               <br>
               <div class="social-links d-flex justify-content-center">
-                <a href="https://www.youtube.com/watch?v=Y5taFZ5RImM" target="_blank"><i class="bi bi-youtube h3"></i></a>
+                <button type="button" class="btn btn-outline-primary" formaction="https://www.youtube.com/watch?v=Y5taFZ5RImM" target="_blank"><i class="bi bi-youtube left-spacing"></i>Video</button>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <img src="assets/img/projects/mindspark.png" class="object-fit-image" style='border:1px solid #000000' alt="MindSpark - Pranav Palle Headstarter AI Flashcards">
+              <br>
+              <br>
+              <a href="https://flashcardsaas-mu.vercel.app/" class="stretched-link">
+                <h3>MindSpark</h3>
+              </a>
+              <p>MindSpark is a fullstack AI flashcard generation website that makes it easy to generate flashcard sets and save them for further learning.</p>
+              <br>
+              <div class="social-links d-flex justify-content-center">
+                <button type="button" class="btn btn-outline-primary" formaction="https://flashcardsaas-mu.vercel.app/" target="_blank"><i class="bi bi-browser-chrome left-spacing"></i>Website</button>
+                <div class="left-spacing"></div>
+                <button type="button" class="btn btn-outline-primary" formaction="https://github.com/jballo/flashcardsaas" target="_blank"><i class="bi bi-github left-spacing"></i>GitHub</button>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -786,7 +869,7 @@
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Call Us</h3>
-                <p>+1 (111) 111 - 1111</p>
+                <p>+1 (111) 111 - 1112</p>
               </div>
             </div><!-- End Info Item -->
 
