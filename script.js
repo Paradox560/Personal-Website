@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() { 
+	const contactForm = document.getElementById("contact-form");
+	contactForm.addEventListener("submit", e => {
+		e.preventDefault()
+		fetch("https://pranavpalle.netlify.app/.netlify/functions/contact", {body: new FormData(e.target)})
+	});
+
 	const carousel = document.querySelector(".carousel"); 
 	const arrowBtns = document.querySelectorAll(".wrapper i"); 
 	const wrapper = document.querySelector(".wrapper"); 
